@@ -1,0 +1,78 @@
+[1mBlood_Distribution_Management.c:39:16: [31merror:[39m Uninitialized variables: d.Request_ID, d.Units_Issued, d.Issue_Date [uninitvar][0m
+        return d;
+               ^
+[1mBlood_Inventory_Management.c:56:13: [31mwarning:[39m The file '"Inventory.dat"' is opened for read and write access at the same time on different streams [incompatibleFileOpen][0m
+        F = fopen("Inventory.dat","wb");
+            ^
+[1mBlood_Inventory_Management.c:240:13: [31mwarning:[39m The file '"Inventory.dat"' is opened for read and write access at the same time on different streams [incompatibleFileOpen][0m
+        F = fopen("Inventory.dat","wb");
+            ^
+[1mBlood_Inventory_Management.c:41:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",Blood_Type);
+    ^
+[1mBlood_Inventory_Management.c:117:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",Blood_Type);
+    ^
+[1mBlood_Inventory_Management.c:178:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",Blood_Type);
+    ^
+[1mBlood_Inventory_Management.c:16:16: [31merror:[39m Uninitialized variables: b.Reserved_Units, b.Issued_Units [uninitvar][0m
+        return b;
+               ^
+[1mBlood_Request_Management.c:83:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",r.Blood_Type);
+    ^
+[1mBlood_Request_Management.c:39:16: [31merror:[39m Uninitialized variables: r.Units_Required, r.Request_Date [uninitvar][0m
+        return r;
+               ^
+[1mDonation_Management.c:39:16: [31merror:[39m Uninitialized variables: d.Donor_ID, d.Donation_Date, d.Units_Donated [uninitvar][0m
+        return d;
+               ^
+[1mDonor_Management.c:37:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",d.Blood_Type);
+    ^
+[1mDonor_Management.c:40:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",d.Mobile_Number);
+    ^
+[1mDonor_Management.c:52:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",d.Gender);
+    ^
+[1mDonor_Management.c:221:13: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+            scanf("%s",Blood_Type);
+            ^
+[1mDonor_Management.c:275:21: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+                    scanf("%s",d.Mobile_Number);
+                    ^
+[1mDonor_Management.c:94:16: [31merror:[39m Uninitialized variables: d.Age, d.Weight [uninitvar][0m
+        return d;
+               ^
+[1mmain.c:195:17: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+                scanf("%s",Blood_Type);
+                ^
+[1mmain.c:555:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",Blood_Type);
+    ^
+[1mtest_bloodbank.cpp:24:9: [31mwarning:[39m Return value of function freopen() is not used. [ignoredReturnValue][0m
+        freopen("/dev/null", "r", stdin);
+        ^
+[1mtest_bloodbank.cpp:42:9: [31mwarning:[39m Return value of function freopen() is not used. [ignoredReturnValue][0m
+        freopen("test_input.txt", "r", stdin);
+        ^
+[1mtest_bloodbank.cpp:22:9: [31mwarning:[39m Return value of function freopen() is not used. [ignoredReturnValue][0m
+        freopen("NUL", "r", stdin);
+        ^
+[1mReports.c:187:0: [31mstyle:[39m The function 'Approved_Request_Report' is never used. [unusedFunction][0m
+
+^
+[1mReports.c:161:0: [31mstyle:[39m The function 'Pending_Request_Report' is never used. [unusedFunction][0m
+
+^
+[1mReports.c:213:0: [31mstyle:[39m The function 'Rejected_Request_Report' is never used. [unusedFunction][0m
+
+^
+[1mtest_bloodbank.cpp:16:0: [31mstyle:[39m The function 'SetUp' is never used. [unusedFunction][0m
+
+^
+[1mtest_bloodbank.cpp:20:0: [31mstyle:[39m The function 'TearDown' is never used. [unusedFunction][0m
+
+^
