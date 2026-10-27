@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <cstdio>
 #include <cstring>
+#include <string>
 
 extern "C" {
     #include "Blood_Inventory_Management.h"
@@ -9,6 +10,7 @@ extern "C" {
     #include "Donor_Management.h"
     #include "Donation_Management.h"
     #include "Users.h"
+    #include "Reports.h"
 }
 
 class BloodBankTest : public ::testing::Test {
@@ -343,4 +345,98 @@ TEST_F(BloodBankTest, ChangeAdminPassword_Success) {
     
     MockStdin("team27\nnewpass123\n");
     EXPECT_EQ(Admin_Login(), 1);
+}
+
+TEST_F(BloodBankTest, ViewInventory_PrintsCorrectData) {
+    SeedInventory("O+", 12.5f, 0.0f, 0.0f);
+    testing::internal::CaptureStdout();
+    View_Inventory();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("O+"), std::string::npos);
+    EXPECT_NE(output.find("12.50"), std::string::npos);
+}
+
+TEST_F(BloodBankTest, ViewDonors_PrintsCorrectData) {
+    SeedDonor(99, "John Doe", "A+");
+    testing::internal::CaptureStdout();
+    View_Donors();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("John Doe"), std::string::npos);
+    EXPECT_NE(output.find("A+"), std::string::npos);
+}
+
+TEST_F(BloodBankTest, ViewDonations_PrintsCorrectData) {
+    SeedDonation(1, 10, 15, 5, 2024, 2.0f);
+    testing::internal::CaptureStdout();
+    View_Donation();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("15/05/2024"), std::string::npos);
+}
+
+TEST_F(BloodBankTest, SystemSummaryReport_PrintsCounts) {
+    SeedDonor(1, "Alice", "A+");
+    SeedDonation(1, 1, 1, 1, 2024, 1.0f);
+    testing::internal::CaptureStdout();
+    System_Summary_Report();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Total Donors           : 1"), std::string::npos);
+    EXPECT_NE(output.find("Total Donations        : 1"), std::string::npos);
+}
+TEST_F(BloodBankTest, DonorReport_PrintsData) {
+    SeedDonor(1, "Alice", "A+");
+    testing::internal::CaptureStdout();
+    Donor_Report();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Alice"), std::string::npos);
+}
+
+TEST_F(BloodBankTest, DonationReport_PrintsData) {
+    SeedDonation(1, 1, 1, 1, 2024, 2.0f);
+    testing::internal::CaptureStdout();
+    Donation_Report();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Total Donations"), std::string::npos);
+}
+
+TEST_F(BloodBankTest, InventoryReport_PrintsData) {
+    SeedInventory("B+", 5.0f, 0.0f, 0.0f);
+    testing::internal::CaptureStdout();
+    Inventory_Report();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("B+"), std::string::npos);
+}
+
+TEST_F(BloodBankTest, LowAndOutOfStockReports_PrintData) {
+    SeedInventory("O-", 2.0f, 0.0f, 0.0f); // Low stock
+    SeedInventory("AB-", 0.0f, 0.0f, 0.0f); // Out of stock
+    
+    testing::internal::CaptureStdout();
+    Low_Stock_Report_Display();
+    Out_Of_Stock_Report_Display();
+    Low_Stock_Report();       // From Inventory module
+    Out_Of_Stock_Report();    // From Inventory module
+    std::string output = testing::internal::GetCapturedStdout();
+    
+    EXPECT_NE(output.find("LOW STOCK"), std::string::npos);
+    EXPECT_NE(output.find("OUT OF STOCK"), std::string::npos);
+}
+
+TEST_F(BloodBankTest, RequestAndDistributionReports_PrintData) {
+    SeedRequest(1, "A+", 5, "Pending");
+    SeedDistribution(1, 1);
+    
+    testing::internal::CaptureStdout();
+    Request_Report();
+    Pending_Request_Report();
+    Approved_Request_Report();
+    Rejected_Request_Report();
+    Distribution_Report();
+    View_Requests();
+    View_Pending_Requests();
+    View_Distribution_History();
+    View_Transaction_History();
+    std::string output = testing::internal::GetCapturedStdout();
+    
+    EXPECT_NE(output.find("PENDING REQUESTS"), std::string::npos);
+    EXPECT_NE(output.find("APPROVED REQUESTS"), std::string::npos);
 }

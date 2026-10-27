@@ -1,12 +1,9 @@
-# --- Compilers and Flags ---
 CC       = gcc
 CXX      = g++
 CFLAGS   = -g -Wall --coverage
 CXXFLAGS = -g -Wall --coverage
 LDFLAGS  = --coverage -lgtest -lgtest_main -pthread
 
-# --- Source Files ---
-# All C files EXCEPT main.c (because main.c has its own main() function)
 SRC_C = Blood_Inventory_Management.c \
         Blood_Request_Management.c   \
         Blood_Distribution_Management.c \
@@ -21,44 +18,64 @@ TEST_SRC  = test_bloodbank.cpp
 TEST_BIN  = test_bloodbank
 MAIN_BIN  = bloodbank
 
-# --- Make Targets ---
-.PHONY: all test coverage cppcheck valgrind run clean
+.PHONY: all test coverage cppcheck valgrind run clean audit
 
-# Default target (just builds and runs tests)
 all: test
 
-# 1. Compile the C files for testing
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# 2. Link the Test Executable
 $(TEST_BIN): $(OBJ) $(TEST_SRC)
 	$(CXX) $(CXXFLAGS) $(TEST_SRC) $(OBJ) $(LDFLAGS) -o $(TEST_BIN)
 
-# 3. Run the 34 Tests
 test: $(TEST_BIN)
 	./$(TEST_BIN)
 
-# 4. Generate Code Coverage with gcov
 coverage: test
 	gcov $(SRC_C)
 
-# 5. Run Cppcheck Static Analysis
 cppcheck:
 	cppcheck --enable=warning,performance,portability --std=c11 -I. --suppress=missingIncludeSystem . 2> cppcheck_final.txt
 	@echo "--- Cppcheck Results ---"
 	@cat cppcheck_final.txt
 
-# 6. Compile the Main App and Run Valgrind
 valgrind:
 	$(CC) $(CFLAGS) *.c -o $(MAIN_BIN)
 	valgrind --leak-check=full ./$(MAIN_BIN)
 
-# 7. Compile and Run the Main App Normally
 run:
 	$(CC) $(CFLAGS) *.c -o $(MAIN_BIN)
 	./$(MAIN_BIN)
 
-# 8. Clean up all generated files
 clean:
-	rm -f *.o *.gcda *.gcno *.gcov $(TEST_BIN) $(MAIN_BIN) cppcheck_final.txt test_input.txt *.dat
+	rm -f *.o *.gcda *.gcno *.gcov $(TEST_BIN) $(MAIN_BIN) cppcheck_final.txt test_input.txt *.dat testing_audit.log
+
+audit:
+	@rm -f testing_audit.log
+	@echo "==================================================" >> testing_audit.log
+	@echo "TIMESTAMP: $$(date)" >> testing_audit.log
+	@echo "ACTION: Compilation and GTest Execution" >> testing_audit.log
+	@echo "==================================================" >> testing_audit.log
+	@$(MAKE) clean >> testing_audit.log 2>&1
+	@$(MAKE) test >> testing_audit.log 2>&1
+	
+	@echo -e "\n==================================================" >> testing_audit.log
+	@echo "TIMESTAMP: $$(date)" >> testing_audit.log
+	@echo "ACTION: GCOV Coverage Analysis" >> testing_audit.log
+	@echo "==================================================" >> testing_audit.log
+	@gcov $(SRC_C) >> testing_audit.log 2>&1
+
+	@echo -e "\n==================================================" >> testing_audit.log
+	@echo "TIMESTAMP: $$(date)" >> testing_audit.log
+	@echo "ACTION: Valgrind Memory Analysis" >> testing_audit.log
+	@echo "==================================================" >> testing_audit.log
+	@$(CC) $(CFLAGS) *.c -o $(MAIN_BIN)
+	@echo 0 | valgrind --leak-check=full ./$(MAIN_BIN) >> testing_audit.log 2>&1
+	
+	@echo -e "\n==================================================" >> testing_audit.log
+	@echo "TIMESTAMP: $$(date)" >> testing_audit.log
+	@echo "ACTION: Cppcheck Static Analysis" >> testing_audit.log
+	@echo "==================================================" >> testing_audit.log
+	@cppcheck --enable=warning,performance,portability --std=c11 -I. --suppress=missingIncludeSystem . >> testing_audit.log 2>&1
+	
+	@echo "✅ Audit complete! Check 'testing_audit.log' for the timestamped report."
