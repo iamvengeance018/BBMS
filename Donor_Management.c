@@ -71,7 +71,7 @@ void View_Donors()
         return;
     }
 
-    Donor d = {0};
+    Donor d;
 
     while(fread(&d,sizeof(Donor),1,F) == 1)
     {
@@ -85,7 +85,6 @@ void View_Donors()
 Donor Search_By_ID(int ID)
 {
     Donor d = {0};
-
     d.Donor_ID = -1;
 
     FILE *F = fopen("Donor_Details.dat","rb");
@@ -105,7 +104,6 @@ Donor Search_By_ID(int ID)
     fclose(F);
 
     d.Donor_ID = -1;
-
     return d;
 }
 
@@ -119,7 +117,7 @@ void Search_By_Name(const char *Name)
         return;
     }
 
-    Donor d = {0};
+    Donor d;
     int found = 0;
 
     while(fread(&d,sizeof(Donor),1,F) == 1)
@@ -148,7 +146,7 @@ void Search_By_Blood_Type(const char *Blood_Type)
         return;
     }
 
-    Donor d = {0};
+    Donor d;
     int found = 0;
 
     while(fread(&d,sizeof(Donor),1,F) == 1)
@@ -240,7 +238,7 @@ void Update_Donor_Details(int ID)
         return;
     }
 
-    Donor d = {0};
+    Donor d;
     int found = 0;
 
     while(fread(&d,sizeof(Donor),1,F) == 1)
@@ -297,7 +295,7 @@ void Update_Donor_Details(int ID)
                     return;
             }
 
-            fseek(F,-sizeof(Donor),SEEK_CUR);
+            fseek(F,-(long)sizeof(Donor),SEEK_CUR);
             fwrite(&d,sizeof(Donor),1,F);
 
             printf("Updated Successfully\n");
@@ -324,7 +322,13 @@ void Delete_Donor(int ID)
 
     FILE *Temp = fopen("Temp.dat","wb");
 
-    Donor d = {0};
+    if(Temp == NULL)
+    {
+        fclose(F);
+        return;
+    }
+
+    Donor d;
     int found = 0;
 
     while(fread(&d,sizeof(Donor),1,F) == 1)

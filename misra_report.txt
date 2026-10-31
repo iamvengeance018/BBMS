@@ -1,0 +1,2232 @@
+[1mBlood_Distribution_Management.h:23:31: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Distribution_History(void);
+                              ^
+[1mBlood_Distribution_Management.h:31:29: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+int Generate_Distribution_ID(void);
+                            ^
+[1mBlood_Distribution_Management.h:35:30: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Transaction_History(void);
+                             ^
+[1mBlood_Distribution_Management.c:20:52: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Blood_Distribution),1,F) == 1)
+                                                   ^
+[1mBlood_Distribution_Management.c:41:52: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Blood_Distribution),1,F) == 1)
+                                                   ^
+[1mBlood_Distribution_Management.c:92:70: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&Inventory,sizeof(Blood_Inventory),1,Inventory_File) == 1)
+                                                                     ^
+[1mBlood_Distribution_Management.c:187:62: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+        while(fread(&r,sizeof(Blood_Request),1,Request_File) == 1)
+                                                             ^
+[1mBlood_Distribution_Management.c:225:52: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Blood_Distribution),1,F) == 1)
+                                                   ^
+[1mBlood_Distribution_Management.c:14:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return 1;
+        ^
+[1mBlood_Distribution_Management.c:39:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return d;
+        ^
+[1mBlood_Distribution_Management.c:47:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return d;
+            ^
+[1mBlood_Distribution_Management.c:66:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Distribution_Management.c:72:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Distribution_Management.c:78:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Distribution_Management.c:86:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Distribution_Management.c:106:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+                return;
+                ^
+[1mBlood_Distribution_Management.c:133:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Distribution_Management.c:142:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Distribution_Management.c:220:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Distribution_Management.c:13:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mBlood_Distribution_Management.c:38:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mBlood_Distribution_Management.c:25:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Distribution_Management.c:45:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mBlood_Distribution_Management.c:51:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Distribution_Management.c:65:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Request Not Found\n");
+              ^
+[1mBlood_Distribution_Management.c:71:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Request Must Be Approved Before Distribution\n");
+              ^
+[1mBlood_Distribution_Management.c:77:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Request Has Invalid Units\n");
+              ^
+[1mBlood_Distribution_Management.c:85:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Not Available\n");
+              ^
+[1mBlood_Distribution_Management.c:102:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Insufficient Stock\n");
+                      ^
+[1mBlood_Distribution_Management.c:104:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                fclose(Inventory_File);
+                      ^
+[1mBlood_Distribution_Management.c:115:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(Inventory_File,
+                 ^
+[1mBlood_Distribution_Management.c:119:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&Inventory,
+                  ^
+[1mBlood_Distribution_Management.c:128:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(Inventory_File);
+          ^
+[1mBlood_Distribution_Management.c:132:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Blood Type Not Found\n");
+              ^
+[1mBlood_Distribution_Management.c:141:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Error Opening Distribution File\n");
+              ^
+[1mBlood_Distribution_Management.c:153:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    strcpy(Distribution.Patient_Name,
+          ^
+[1mBlood_Distribution_Management.c:156:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    strcpy(Distribution.Blood_Type,
+          ^
+[1mBlood_Distribution_Management.c:162:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Issue Date\n");
+          ^
+[1mBlood_Distribution_Management.c:164:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Day : ");
+          ^
+[1mBlood_Distribution_Management.c:165:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&Distribution.Issue_Date.day);
+         ^
+[1mBlood_Distribution_Management.c:167:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Month : ");
+          ^
+[1mBlood_Distribution_Management.c:168:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&Distribution.Issue_Date.month);
+         ^
+[1mBlood_Distribution_Management.c:170:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Year : ");
+          ^
+[1mBlood_Distribution_Management.c:171:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&Distribution.Issue_Date.year);
+         ^
+[1mBlood_Distribution_Management.c:173:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fwrite(&Distribution,
+          ^
+[1mBlood_Distribution_Management.c:178:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(Distribution_File);
+          ^
+[1mBlood_Distribution_Management.c:191:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                strcpy(r.Status,"Completed");
+                      ^
+[1mBlood_Distribution_Management.c:193:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                fseek(Request_File,
+                     ^
+[1mBlood_Distribution_Management.c:197:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                fwrite(&r,
+                      ^
+[1mBlood_Distribution_Management.c:206:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(Request_File);
+              ^
+[1mBlood_Distribution_Management.c:209:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Blood Issued Successfully\n");
+          ^
+[1mBlood_Distribution_Management.c:219:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Distribution Records Found\n");
+              ^
+[1mBlood_Distribution_Management.c:232:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Distribution_Management.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mBlood_Inventory_Management.c:56:13: [31mwarning:[39m The file '"Inventory.dat"' is opened for read and write access at the same time on different streams [incompatibleFileOpen][0m
+        F = fopen("Inventory.dat","wb");
+            ^
+[1mBlood_Inventory_Management.c:246:13: [31mwarning:[39m The file '"Inventory.dat"' is opened for read and write access at the same time on different streams [incompatibleFileOpen][0m
+        F = fopen("Inventory.dat","wb");
+            ^
+[1mBlood_Inventory_Management.h:15:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Add_Stock(void);
+              ^
+[1mBlood_Inventory_Management.h:16:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Reserve_Blood(void);
+                  ^
+[1mBlood_Inventory_Management.h:17:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Issue_Blood(void);
+                ^
+[1mBlood_Inventory_Management.h:18:20: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Inventory(void);
+                   ^
+[1mBlood_Inventory_Management.h:22:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Low_Stock_Report(void);
+                     ^
+[1mBlood_Inventory_Management.h:23:25: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Out_Of_Stock_Report(void);
+                        ^
+[1mBlood_Inventory_Management.c:18:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:46:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    if(Units <= 0)
+             ^
+[1mBlood_Inventory_Management.c:84:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:128:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    if(Units <= 0)
+             ^
+[1mBlood_Inventory_Management.c:144:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:189:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    if(Units <= 0)
+             ^
+[1mBlood_Inventory_Management.c:205:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:266:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:308:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:332:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:359:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mBlood_Inventory_Management.c:16:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return b;
+        ^
+[1mBlood_Inventory_Management.c:23:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return b;
+            ^
+[1mBlood_Inventory_Management.c:49:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:60:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:78:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:131:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:139:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:154:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+                return;
+                ^
+[1mBlood_Inventory_Management.c:168:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return;
+            ^
+[1mBlood_Inventory_Management.c:192:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:200:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:215:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+                return;
+                ^
+[1mBlood_Inventory_Management.c:229:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return;
+            ^
+[1mBlood_Inventory_Management.c:260:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:303:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:325:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:352:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Inventory_Management.c:15:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mBlood_Inventory_Management.c:22:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mBlood_Inventory_Management.c:27:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:40:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Blood Type : ");
+          ^
+[1mBlood_Inventory_Management.c:41:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%4s",Blood_Type);
+         ^
+[1mBlood_Inventory_Management.c:43:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Units : ");
+          ^
+[1mBlood_Inventory_Management.c:44:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%f",&Units);
+         ^
+[1mBlood_Inventory_Management.c:48:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Invalid Units\n");
+              ^
+[1mBlood_Inventory_Management.c:59:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Error unabe to create inventory.dat");
+              ^
+[1mBlood_Inventory_Management.c:66:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        strcpy(b.Blood_Type,Blood_Type);
+              ^
+[1mBlood_Inventory_Management.c:72:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fwrite(&b,sizeof(Blood_Inventory),1,F);
+              ^
+[1mBlood_Inventory_Management.c:74:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mBlood_Inventory_Management.c:76:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Stock Added Successfully\n");
+              ^
+[1mBlood_Inventory_Management.c:90:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(F,-(long)sizeof(Blood_Inventory),SEEK_CUR);
+                 ^
+[1mBlood_Inventory_Management.c:92:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&b,sizeof(Blood_Inventory),1,F);
+                  ^
+[1mBlood_Inventory_Management.c:102:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        strcpy(b.Blood_Type,Blood_Type);
+              ^
+[1mBlood_Inventory_Management.c:108:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fwrite(&b,sizeof(Blood_Inventory),1,F);
+              ^
+[1mBlood_Inventory_Management.c:111:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:113:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Stock Added Successfully\n");
+          ^
+[1mBlood_Inventory_Management.c:122:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Blood Type : ");
+          ^
+[1mBlood_Inventory_Management.c:123:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%4s",Blood_Type);
+         ^
+[1mBlood_Inventory_Management.c:125:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Units : ");
+          ^
+[1mBlood_Inventory_Management.c:126:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%f",&Units);
+         ^
+[1mBlood_Inventory_Management.c:130:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Invalid Units\n");
+              ^
+[1mBlood_Inventory_Management.c:138:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mBlood_Inventory_Management.c:150:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Insufficient Stock\n");
+                      ^
+[1mBlood_Inventory_Management.c:152:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                fclose(F);
+                      ^
+[1mBlood_Inventory_Management.c:160:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(F,-(long)sizeof(Blood_Inventory),SEEK_CUR);
+                 ^
+[1mBlood_Inventory_Management.c:162:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&b,sizeof(Blood_Inventory),1,F);
+                  ^
+[1mBlood_Inventory_Management.c:164:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mBlood_Inventory_Management.c:166:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Blood Reserved Successfully\n");
+                  ^
+[1mBlood_Inventory_Management.c:172:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:174:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Blood Type Not Found\n");
+          ^
+[1mBlood_Inventory_Management.c:183:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Blood Type : ");
+          ^
+[1mBlood_Inventory_Management.c:184:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%4s",Blood_Type);
+         ^
+[1mBlood_Inventory_Management.c:186:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Units : ");
+          ^
+[1mBlood_Inventory_Management.c:187:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%f",&Units);
+         ^
+[1mBlood_Inventory_Management.c:191:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Invalid Units\n");
+              ^
+[1mBlood_Inventory_Management.c:199:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mBlood_Inventory_Management.c:211:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Not Enough Reserved Blood\n");
+                      ^
+[1mBlood_Inventory_Management.c:213:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                fclose(F);
+                      ^
+[1mBlood_Inventory_Management.c:221:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(F,-(long)sizeof(Blood_Inventory),SEEK_CUR);
+                 ^
+[1mBlood_Inventory_Management.c:223:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&b,sizeof(Blood_Inventory),1,F);
+                  ^
+[1mBlood_Inventory_Management.c:225:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mBlood_Inventory_Management.c:227:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Blood Issued Successfully\n");
+                  ^
+[1mBlood_Inventory_Management.c:233:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:235:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Blood Type Not Found\n");
+          ^
+[1mBlood_Inventory_Management.c:250:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        strcpy(b.Blood_Type,Blood_Type);
+              ^
+[1mBlood_Inventory_Management.c:256:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fwrite(&b,sizeof(Blood_Inventory),1,F);
+              ^
+[1mBlood_Inventory_Management.c:258:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mBlood_Inventory_Management.c:272:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(F,-(long)sizeof(Blood_Inventory),SEEK_CUR);
+                 ^
+[1mBlood_Inventory_Management.c:274:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&b,sizeof(Blood_Inventory),1,F);
+                  ^
+[1mBlood_Inventory_Management.c:284:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        strcpy(b.Blood_Type,Blood_Type);
+              ^
+[1mBlood_Inventory_Management.c:290:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fwrite(&b,sizeof(Blood_Inventory),1,F);
+              ^
+[1mBlood_Inventory_Management.c:293:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:302:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mBlood_Inventory_Management.c:315:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:324:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mBlood_Inventory_Management.c:330:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nLOW STOCK REPORT\n");
+          ^
+[1mBlood_Inventory_Management.c:342:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:351:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mBlood_Inventory_Management.c:357:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nOUT OF STOCK REPORT\n");
+          ^
+[1mBlood_Inventory_Management.c:369:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Inventory_Management.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mBlood_Request_Management.h:23:28: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Register_Blood_Request(void);
+                           ^
+[1mBlood_Request_Management.h:24:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Requests(void);
+                  ^
+[1mBlood_Request_Management.h:33:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Pending_Requests(void);
+                          ^
+[1mBlood_Request_Management.h:37:24: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+int Generate_Request_ID(void);
+                       ^
+[1mBlood_Request_Management.c:179:29: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-9.3][0m
+            Blood_Inventory b =
+                            ^
+[1mBlood_Request_Management.c:20:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mBlood_Request_Management.c:41:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mBlood_Request_Management.c:128:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mBlood_Request_Management.c:150:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mBlood_Request_Management.c:175:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mBlood_Request_Management.c:222:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mBlood_Request_Management.c:14:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return 1;
+        ^
+[1mBlood_Request_Management.c:39:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return r;
+        ^
+[1mBlood_Request_Management.c:47:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return r;
+            ^
+[1mBlood_Request_Management.c:65:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Request_Management.c:92:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Request_Management.c:123:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Request_Management.c:145:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Request_Management.c:170:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Request_Management.c:188:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+                return;
+                ^
+[1mBlood_Request_Management.c:201:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return;
+            ^
+[1mBlood_Request_Management.c:217:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mBlood_Request_Management.c:236:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return;
+            ^
+[1mBlood_Request_Management.c:13:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mBlood_Request_Management.c:38:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mBlood_Request_Management.c:25:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Request_Management.c:45:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mBlood_Request_Management.c:51:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Request_Management.c:64:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Error Opening File\n");
+              ^
+[1mBlood_Request_Management.c:72:12: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    getchar();
+           ^
+[1mBlood_Request_Management.c:74:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Patient Name : ");
+          ^
+[1mBlood_Request_Management.c:75:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fgets(r.Patient_Name,sizeof(r.Patient_Name),stdin);
+         ^
+[1mBlood_Request_Management.c:78:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Hospital Name : ");
+          ^
+[1mBlood_Request_Management.c:79:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fgets(r.Hospital_Name,sizeof(r.Hospital_Name),stdin);
+         ^
+[1mBlood_Request_Management.c:82:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Blood Type : ");
+          ^
+[1mBlood_Request_Management.c:83:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%4s",r.Blood_Type);
+         ^
+[1mBlood_Request_Management.c:85:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Units Required : ");
+          ^
+[1mBlood_Request_Management.c:86:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&r.Units_Required);
+         ^
+[1mBlood_Request_Management.c:90:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Invalid Units\n");
+              ^
+[1mBlood_Request_Management.c:91:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mBlood_Request_Management.c:95:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Request Date\n");
+          ^
+[1mBlood_Request_Management.c:97:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Day : ");
+          ^
+[1mBlood_Request_Management.c:98:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&r.Request_Date.day);
+         ^
+[1mBlood_Request_Management.c:100:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Month : ");
+          ^
+[1mBlood_Request_Management.c:101:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&r.Request_Date.month);
+         ^
+[1mBlood_Request_Management.c:103:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Year : ");
+          ^
+[1mBlood_Request_Management.c:104:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&r.Request_Date.year);
+         ^
+[1mBlood_Request_Management.c:106:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    strcpy(r.Status,"Pending");
+          ^
+[1mBlood_Request_Management.c:108:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fwrite(&r,sizeof(Blood_Request),1,F);
+          ^
+[1mBlood_Request_Management.c:110:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Request_Management.c:112:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nRequest Registered Successfully\n");
+          ^
+[1mBlood_Request_Management.c:113:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Request ID : %d\n",r.Request_ID);
+          ^
+[1mBlood_Request_Management.c:122:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mBlood_Request_Management.c:135:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Request_Management.c:144:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mBlood_Request_Management.c:160:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Request_Management.c:169:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mBlood_Request_Management.c:184:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Insufficient Stock\n");
+                      ^
+[1mBlood_Request_Management.c:186:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                fclose(F);
+                      ^
+[1mBlood_Request_Management.c:191:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            strcpy(r.Status,"Approved");
+                  ^
+[1mBlood_Request_Management.c:193:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(F,-(long)sizeof(Blood_Request),SEEK_CUR);
+                 ^
+[1mBlood_Request_Management.c:195:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&r,sizeof(Blood_Request),1,F);
+                  ^
+[1mBlood_Request_Management.c:197:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mBlood_Request_Management.c:199:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Request Approved\n");
+                  ^
+[1mBlood_Request_Management.c:205:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Request_Management.c:207:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Request Not Found\n");
+          ^
+[1mBlood_Request_Management.c:216:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mBlood_Request_Management.c:226:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            strcpy(r.Status,"Rejected");
+                  ^
+[1mBlood_Request_Management.c:228:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(F,-(long)sizeof(Blood_Request),SEEK_CUR);
+                 ^
+[1mBlood_Request_Management.c:230:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&r,sizeof(Blood_Request),1,F);
+                  ^
+[1mBlood_Request_Management.c:232:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mBlood_Request_Management.c:234:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Request Rejected\n");
+                  ^
+[1mBlood_Request_Management.c:240:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mBlood_Request_Management.c:242:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Request Not Found\n");
+          ^
+[1mBlood_Request_Management.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mDonation_Management.h:16:21: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Record_Donation(void);
+                    ^
+[1mDonation_Management.h:17:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Donation(void);
+                  ^
+[1mDonation_Management.h:25:25: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+int Generate_Donation_ID(void);
+                        ^
+[1mDonation_Management.c:20:42: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donation),1,F) == 1)
+                                         ^
+[1mDonation_Management.c:41:42: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donation),1,F) == 1)
+                                         ^
+[1mDonation_Management.c:141:42: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donation),1,F) == 1)
+                                         ^
+[1mDonation_Management.c:163:42: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donation),1,F) == 1)
+                                         ^
+[1mDonation_Management.c:193:42: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donation),1,F) == 1)
+                                         ^
+[1mDonation_Management.c:196:45: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-12.1][0m
+            d.Donation_Date.day == date.day &&
+                                            ^
+[1mDonation_Management.c:197:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-12.1][0m
+            d.Donation_Date.month == date.month &&
+                                                ^
+[1mDonation_Management.c:15:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return 1;
+        ^
+[1mDonation_Management.c:39:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return d;
+        ^
+[1mDonation_Management.c:46:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return d;
+            ^
+[1mDonation_Management.c:64:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonation_Management.c:80:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonation_Management.c:101:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonation_Management.c:136:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonation_Management.c:157:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonation_Management.c:187:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonation_Management.c:14:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mDonation_Management.c:38:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mDonation_Management.c:176:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(!Found)
+    ^
+[1mDonation_Management.c:210:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(!Found)
+    ^
+[1mDonation_Management.c:25:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonation_Management.c:45:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mDonation_Management.c:50:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonation_Management.c:63:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Error Opening File\n");
+              ^
+[1mDonation_Management.c:71:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Donor ID : ");
+          ^
+[1mDonation_Management.c:72:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&d.Donor_ID);
+         ^
+[1mDonation_Management.c:78:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Donor Not Found\n");
+              ^
+[1mDonation_Management.c:79:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mDonation_Management.c:83:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Donation Date\n");
+          ^
+[1mDonation_Management.c:85:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Day : ");
+          ^
+[1mDonation_Management.c:86:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&d.Donation_Date.day);
+         ^
+[1mDonation_Management.c:88:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Month : ");
+          ^
+[1mDonation_Management.c:89:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&d.Donation_Date.month);
+         ^
+[1mDonation_Management.c:91:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Year : ");
+          ^
+[1mDonation_Management.c:92:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&d.Donation_Date.year);
+         ^
+[1mDonation_Management.c:94:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Units Donated : ");
+          ^
+[1mDonation_Management.c:95:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%f",&d.Units_Donated);
+         ^
+[1mDonation_Management.c:99:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Invalid Units\n");
+              ^
+[1mDonation_Management.c:100:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mDonation_Management.c:104:12: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    getchar();
+           ^
+[1mDonation_Management.c:106:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Location : ");
+          ^
+[1mDonation_Management.c:107:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fgets(d.Location,sizeof(d.Location),stdin);
+         ^
+[1mDonation_Management.c:110:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Remarks : ");
+          ^
+[1mDonation_Management.c:111:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fgets(d.Remarks,sizeof(d.Remarks),stdin);
+         ^
+[1mDonation_Management.c:114:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fwrite(&d,sizeof(Donation),1,F);
+          ^
+[1mDonation_Management.c:116:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonation_Management.c:125:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nDonation Recorded Successfully\n");
+          ^
+[1mDonation_Management.c:126:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Donation ID : %d\n",d.Donation_ID);
+          ^
+[1mDonation_Management.c:135:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Donation Records Found\n");
+              ^
+[1mDonation_Management.c:147:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonation_Management.c:156:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Donation Records Found\n");
+              ^
+[1mDonation_Management.c:174:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonation_Management.c:177:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Donations Found\n");
+              ^
+[1mDonation_Management.c:186:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Donation Records Found\n");
+              ^
+[1mDonation_Management.c:208:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonation_Management.c:211:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Donations Found\n");
+              ^
+[1mDonation_Management.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mDonor_Management.h:15:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Add_Donor(void);
+              ^
+[1mDonor_Management.h:17:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Donors(void);
+                ^
+[1mDonor_Management.h:22:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Search_Donor(void);
+                 ^
+[1mDonor_Management.c:76:39: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donor),1,F) == 1)
+                                      ^
+[1mDonor_Management.c:95:39: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donor),1,F) == 1)
+                                      ^
+[1mDonor_Management.c:123:39: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donor),1,F) == 1)
+                                      ^
+[1mDonor_Management.c:152:39: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donor),1,F) == 1)
+                                      ^
+[1mDonor_Management.c:244:39: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donor),1,F) == 1)
+                                      ^
+[1mDonor_Management.c:334:39: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donor),1,F) == 1)
+                                      ^
+[1mDonor_Management.c:351:7: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-14.4][0m
+    if(found)
+      ^
+[1mDonor_Management.c:15:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:27:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:71:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:93:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return d;
+        ^
+[1mDonor_Management.c:100:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+            return d;
+            ^
+[1mDonor_Management.c:117:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:146:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:238:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:295:21: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+                    return;
+                    ^
+[1mDonor_Management.c:320:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:328:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mDonor_Management.c:92:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(F == NULL)
+    ^
+[1mDonor_Management.c:133:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(!found)
+    ^
+[1mDonor_Management.c:162:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(!found)
+    ^
+[1mDonor_Management.c:190:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+            if(d.Donor_ID == -1)
+            ^
+[1mDonor_Management.c:192:13: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+            else
+            ^
+[1mDonor_Management.c:307:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(!found)
+    ^
+[1mDonor_Management.c:353:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    else
+    ^
+[1mDonor_Management.c:228:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.3][0m
+    }
+    ^
+[1mDonor_Management.c:14:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Error opening file\n");
+              ^
+[1mDonor_Management.c:20:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Donor ID : ");
+          ^
+[1mDonor_Management.c:21:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&d.Donor_ID);
+         ^
+[1mDonor_Management.c:25:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Donor ID already exists\n");
+              ^
+[1mDonor_Management.c:26:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mDonor_Management.c:30:12: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    getchar();
+           ^
+[1mDonor_Management.c:32:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Name : ");
+          ^
+[1mDonor_Management.c:33:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fgets(d.Name,sizeof(d.Name),stdin);
+         ^
+[1mDonor_Management.c:36:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Blood Type : ");
+          ^
+[1mDonor_Management.c:37:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%4s",d.Blood_Type);
+         ^
+[1mDonor_Management.c:39:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Mobile Number : ");
+          ^
+[1mDonor_Management.c:40:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%14s",d.Mobile_Number);
+         ^
+[1mDonor_Management.c:42:12: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    getchar();
+           ^
+[1mDonor_Management.c:44:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Address : ");
+          ^
+[1mDonor_Management.c:45:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fgets(d.Address,sizeof(d.Address),stdin);
+         ^
+[1mDonor_Management.c:48:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Age : ");
+          ^
+[1mDonor_Management.c:49:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&d.Age);
+         ^
+[1mDonor_Management.c:51:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Gender : ");
+          ^
+[1mDonor_Management.c:52:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%9s",d.Gender);
+         ^
+[1mDonor_Management.c:54:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Weight : ");
+          ^
+[1mDonor_Management.c:55:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%f",&d.Weight);
+         ^
+[1mDonor_Management.c:57:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fwrite(&d,sizeof(Donor),1,F);
+          ^
+[1mDonor_Management.c:59:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonor_Management.c:61:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nDonor Added Successfully\n");
+          ^
+[1mDonor_Management.c:70:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No donor records found\n");
+              ^
+[1mDonor_Management.c:82:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonor_Management.c:99:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fclose(F);
+                  ^
+[1mDonor_Management.c:104:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonor_Management.c:116:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("File Not Found\n");
+              ^
+[1mDonor_Management.c:134:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No donor found\n");
+              ^
+[1mDonor_Management.c:136:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonor_Management.c:145:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("File Not Found\n");
+              ^
+[1mDonor_Management.c:163:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No donor found\n");
+              ^
+[1mDonor_Management.c:165:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonor_Management.c:172:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n1. Search By ID");
+          ^
+[1mDonor_Management.c:173:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n2. Search By Name");
+          ^
+[1mDonor_Management.c:174:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n3. Search By Blood Type");
+          ^
+[1mDonor_Management.c:176:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n\nEnter Choice : ");
+          ^
+[1mDonor_Management.c:177:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%d",&choice);
+         ^
+[1mDonor_Management.c:185:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Enter ID : ");
+                  ^
+[1mDonor_Management.c:186:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            scanf("%d",&ID);
+                 ^
+[1mDonor_Management.c:191:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Donor Not Found\n");
+                      ^
+[1mDonor_Management.c:202:20: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            getchar();
+                   ^
+[1mDonor_Management.c:204:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Enter Name : ");
+                  ^
+[1mDonor_Management.c:205:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fgets(Name,sizeof(Name),stdin);
+                 ^
+[1mDonor_Management.c:218:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Enter Blood Type : ");
+                  ^
+[1mDonor_Management.c:219:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            scanf("%4s",Blood_Type);
+                 ^
+[1mDonor_Management.c:227:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Invalid Choice\n");
+                  ^
+[1mDonor_Management.c:237:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("File Not Found\n");
+              ^
+[1mDonor_Management.c:252:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("\n1. Name");
+                  ^
+[1mDonor_Management.c:253:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("\n2. Mobile Number");
+                  ^
+[1mDonor_Management.c:254:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("\n3. Address");
+                  ^
+[1mDonor_Management.c:255:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("\n4. Age");
+                  ^
+[1mDonor_Management.c:256:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("\n5. Weight");
+                  ^
+[1mDonor_Management.c:258:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("\n\nEnter Choice : ");
+                  ^
+[1mDonor_Management.c:259:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            scanf("%d",&choice);
+                 ^
+[1mDonor_Management.c:261:20: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            getchar();
+                   ^
+[1mDonor_Management.c:266:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Enter New Name : ");
+                          ^
+[1mDonor_Management.c:267:26: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    fgets(d.Name,sizeof(d.Name),stdin);
+                         ^
+[1mDonor_Management.c:272:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Enter New Mobile Number : ");
+                          ^
+[1mDonor_Management.c:273:26: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    scanf("%14s",d.Mobile_Number);
+                         ^
+[1mDonor_Management.c:277:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Enter New Address : ");
+                          ^
+[1mDonor_Management.c:278:26: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    fgets(d.Address,sizeof(d.Address),stdin);
+                         ^
+[1mDonor_Management.c:283:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Enter New Age : ");
+                          ^
+[1mDonor_Management.c:284:26: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    scanf("%d",&d.Age);
+                         ^
+[1mDonor_Management.c:288:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Enter New Weight : ");
+                          ^
+[1mDonor_Management.c:289:26: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    scanf("%f",&d.Weight);
+                         ^
+[1mDonor_Management.c:293:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Invalid Choice\n");
+                          ^
+[1mDonor_Management.c:294:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    fclose(F);
+                          ^
+[1mDonor_Management.c:298:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fseek(F,-(long)sizeof(Donor),SEEK_CUR);
+                 ^
+[1mDonor_Management.c:299:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            fwrite(&d,sizeof(Donor),1,F);
+                  ^
+[1mDonor_Management.c:301:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+            printf("Updated Successfully\n");
+                  ^
+[1mDonor_Management.c:308:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Donor Not Found\n");
+              ^
+[1mDonor_Management.c:310:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonor_Management.c:319:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("File Not Found\n");
+              ^
+[1mDonor_Management.c:327:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mDonor_Management.c:342:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fwrite(&d,sizeof(Donor),1,Temp);
+              ^
+[1mDonor_Management.c:345:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mDonor_Management.c:346:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(Temp);
+          ^
+[1mDonor_Management.c:348:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    remove("Donor_Details.dat");
+          ^
+[1mDonor_Management.c:349:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    rename("Temp.dat","Donor_Details.dat");
+          ^
+[1mDonor_Management.c:352:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Donor Deleted Successfully\n");
+              ^
+[1mDonor_Management.c:354:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Donor Not Found\n");
+              ^
+[1mDonor_Management.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mHelper.h:12:16: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Print_Line(void);
+               ^
+[1mHelper.c:8:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n------------------------------------------------------------\n");
+          ^
+[1mHelper.c:13:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nDonor ID      : %d", d.Donor_ID);
+          ^
+[1mHelper.c:14:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nName          : %s", d.Name);
+          ^
+[1mHelper.c:15:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nBlood Type    : %s", d.Blood_Type);
+          ^
+[1mHelper.c:16:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nMobile Number : %s", d.Mobile_Number);
+          ^
+[1mHelper.c:17:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nAddress       : %s", d.Address);
+          ^
+[1mHelper.c:18:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nAge           : %d", d.Age);
+          ^
+[1mHelper.c:19:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nGender        : %s", d.Gender);
+          ^
+[1mHelper.c:20:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nWeight        : %.2f", d.Weight);
+          ^
+[1mHelper.c:27:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nDonation ID   : %d",d.Donation_ID);
+          ^
+[1mHelper.c:29:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nDonor ID      : %d",d.Donor_ID);
+          ^
+[1mHelper.c:31:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nDate          : %02d/%02d/%04d",
+          ^
+[1mHelper.c:36:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nUnits Donated : %.2f",d.Units_Donated);
+          ^
+[1mHelper.c:38:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nLocation      : %s",d.Location);
+          ^
+[1mHelper.c:40:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nRemarks       : %s",d.Remarks);
+          ^
+[1mHelper.c:45:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nBlood Type      : %s",
+          ^
+[1mHelper.c:48:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nAvailable Units : %.2f",
+          ^
+[1mHelper.c:51:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nReserved Units  : %.2f",
+          ^
+[1mHelper.c:54:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nIssued Units    : %.2f",
+          ^
+[1mHelper.c:60:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nRequest ID      : %d",
+          ^
+[1mHelper.c:63:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nPatient Name    : %s",
+          ^
+[1mHelper.c:66:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nHospital Name   : %s",
+          ^
+[1mHelper.c:69:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nBlood Type      : %s",
+          ^
+[1mHelper.c:72:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nUnits Required  : %d",
+          ^
+[1mHelper.c:75:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nRequest Date    : %02d/%02d/%04d",
+          ^
+[1mHelper.c:80:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nStatus          : %s",
+          ^
+[1mHelper.c:87:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nDistribution ID : %d",
+          ^
+[1mHelper.c:90:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nRequest ID      : %d",
+          ^
+[1mHelper.c:93:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nPatient Name    : %s",
+          ^
+[1mHelper.c:96:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nBlood Type      : %s",
+          ^
+[1mHelper.c:99:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nUnits Issued    : %d",
+          ^
+[1mHelper.c:102:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nIssue Date      : %02d/%02d/%04d",
+          ^
+[1mHelper.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mReports.h:4:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Donor_Report(void);
+                 ^
+[1mReports.h:7:21: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Donation_Report(void);
+                    ^
+[1mReports.h:10:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Inventory_Report(void);
+                     ^
+[1mReports.h:11:30: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Low_Stock_Report_Display(void);
+                             ^
+[1mReports.h:12:33: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Out_Of_Stock_Report_Display(void);
+                                ^
+[1mReports.h:15:20: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Request_Report(void);
+                   ^
+[1mReports.h:16:28: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Pending_Request_Report(void);
+                           ^
+[1mReports.h:17:29: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Approved_Request_Report(void);
+                            ^
+[1mReports.h:18:29: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Rejected_Request_Report(void);
+                            ^
+[1mReports.h:21:25: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Distribution_Report(void);
+                        ^
+[1mReports.h:24:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void System_Summary_Report(void);
+                          ^
+[1mReports.c:50:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.3][0m
+    float Total_Units = 0;
+                      ^
+[1mReports.c:25:39: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donor),1,F) == 1)
+                                      ^
+[1mReports.c:52:42: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Donation),1,F) == 1)
+                                         ^
+[1mReports.c:79:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mReports.c:102:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mReports.c:128:49: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&b,sizeof(Blood_Inventory),1,F) == 1)
+                                                ^
+[1mReports.c:152:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mReports.c:175:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mReports.c:201:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mReports.c:227:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&r,sizeof(Blood_Request),1,F) == 1)
+                                              ^
+[1mReports.c:251:52: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+    while(fread(&d,sizeof(Blood_Distribution),1,F) == 1)
+                                                   ^
+[1mReports.c:278:47: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+        while(fread(&donor,sizeof(Donor),1,F) == 1)
+                                              ^
+[1mReports.c:288:53: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+        while(fread(&donation,sizeof(Donation),1,F) == 1)
+                                                    ^
+[1mReports.c:298:57: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+        while(fread(&request,sizeof(Blood_Request),1,F) == 1)
+                                                        ^
+[1mReports.c:308:67: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-10.4][0m
+        while(fread(&distribution,sizeof(Blood_Distribution),1,F) == 1)
+                                                                  ^
+[1mReports.c:19:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:45:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:74:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:95:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:121:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:147:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:168:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:194:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:220:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:246:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mReports.c:18:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Donor Records Found\n");
+              ^
+[1mReports.c:33:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:35:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nTotal Donors : %d\n",Count);
+          ^
+[1mReports.c:44:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Donation Records Found\n");
+              ^
+[1mReports.c:61:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:63:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nTotal Donations : %d",Count);
+          ^
+[1mReports.c:64:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nTotal Units Collected : %.2f\n",Total_Units);
+          ^
+[1mReports.c:73:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mReports.c:85:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:94:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mReports.c:100:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========== LOW STOCK REPORT ==========\n");
+          ^
+[1mReports.c:111:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:120:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Inventory Empty\n");
+              ^
+[1mReports.c:126:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========== OUT OF STOCK REPORT ==========\n");
+          ^
+[1mReports.c:137:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:146:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mReports.c:158:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:167:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mReports.c:173:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========== PENDING REQUESTS ==========\n");
+          ^
+[1mReports.c:184:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:193:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mReports.c:199:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========== APPROVED REQUESTS ==========\n");
+          ^
+[1mReports.c:210:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:219:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Requests Found\n");
+              ^
+[1mReports.c:225:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========== REJECTED REQUESTS ==========\n");
+          ^
+[1mReports.c:236:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:245:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("No Distribution Records Found\n");
+              ^
+[1mReports.c:257:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mReports.c:281:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mReports.c:291:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mReports.c:301:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mReports.c:311:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mReports.c:314:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========================================");
+          ^
+[1mReports.c:315:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n        BLOOD BANK SYSTEM SUMMARY");
+          ^
+[1mReports.c:316:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========================================");
+          ^
+[1mReports.c:318:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nTotal Donors           : %d",Donor_Count);
+          ^
+[1mReports.c:319:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nTotal Donations        : %d",Donation_Count);
+          ^
+[1mReports.c:320:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nTotal Requests         : %d",Request_Count);
+          ^
+[1mReports.c:321:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nTotal Distributions    : %d",Distribution_Count);
+          ^
+[1mReports.c:323:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\n========================================\n");
+          ^
+[1mReports.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mUsers.h:13:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Initialize_Admin(void);
+                     ^
+[1mUsers.h:17:16: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+int Admin_Login(void);
+               ^
+[1mUsers.h:21:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Change_Admin_Password(void);
+                          ^
+[1mUsers.h:25:24: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void View_Login_Details(void);
+                       ^
+[1mUsers.c:59:46: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-12.1][0m
+    if(strcmp(Username, admin.Username) == 0 &&
+                                             ^
+[1mUsers.c:13:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mUsers.c:21:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mUsers.c:41:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return 0;
+        ^
+[1mUsers.c:63:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return 1;
+        ^
+[1mUsers.c:78:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mUsers.c:96:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mUsers.c:120:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.5][0m
+        return;
+        ^
+[1mUsers.c:12:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mUsers.c:20:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Failed To Create Admin File\n");
+              ^
+[1mUsers.c:26:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    strcpy(admin.Username, "team27");
+          ^
+[1mUsers.c:27:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    strcpy(admin.Password, "kuruvi");
+          ^
+[1mUsers.c:29:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fwrite(&admin, sizeof(Admin), 1, F);
+          ^
+[1mUsers.c:31:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mUsers.c:40:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Admin File Not Found\n");
+              ^
+[1mUsers.c:46:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fread(&admin, sizeof(Admin), 1, F);
+         ^
+[1mUsers.c:48:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mUsers.c:53:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Username : ");
+          ^
+[1mUsers.c:54:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%49s", Username);
+         ^
+[1mUsers.c:56:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Password : ");
+          ^
+[1mUsers.c:57:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%49s", Password);
+         ^
+[1mUsers.c:62:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\nLogin Successful\n");
+              ^
+[1mUsers.c:66:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nInvalid Username Or Password\n");
+          ^
+[1mUsers.c:77:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Admin File Not Found\n");
+              ^
+[1mUsers.c:83:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fread(&admin, sizeof(Admin), 1, F);
+         ^
+[1mUsers.c:88:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Current Password : ");
+          ^
+[1mUsers.c:89:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%49s", Current_Password);
+         ^
+[1mUsers.c:93:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Incorrect Password\n");
+              ^
+[1mUsers.c:95:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        fclose(F);
+              ^
+[1mUsers.c:99:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter New Password : ");
+          ^
+[1mUsers.c:100:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%49s", New_Password);
+         ^
+[1mUsers.c:102:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    strcpy(admin.Password, New_Password);
+          ^
+[1mUsers.c:106:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fwrite(&admin, sizeof(Admin), 1, F);
+          ^
+[1mUsers.c:108:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mUsers.c:110:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Password Changed Successfully\n");
+          ^
+[1mUsers.c:119:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Admin File Not Found\n");
+              ^
+[1mUsers.c:125:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fread(&admin, sizeof(Admin), 1, F);
+         ^
+[1mUsers.c:127:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    fclose(F);
+          ^
+[1mUsers.c:129:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("\nUsername : %s\n",
+          ^
+[1mUsers.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mmain.c:17:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void User_Portal(void);
+                ^
+[1mmain.c:18:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Admin_Portal(void);
+                 ^
+[1mmain.c:20:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Donate_Menu(void);
+                ^
+[1mmain.c:21:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Request_Menu(void);
+                 ^
+[1mmain.c:23:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Donor_Management_Menu(void);
+                          ^
+[1mmain.c:24:30: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Donation_Management_Menu(void);
+                             ^
+[1mmain.c:25:31: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Inventory_Management_Menu(void);
+                              ^
+[1mmain.c:26:29: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Request_Management_Menu(void);
+                            ^
+[1mmain.c:27:34: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Distribution_Management_Menu(void);
+                                 ^
+[1mmain.c:28:29: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Blood_Availability_Menu(void);
+                            ^
+[1mmain.c:30:18: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void Reports_Menu(void);
+                 ^
+[1mmain.c:31:26: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+void User_Management_Menu(void);
+                         ^
+[1mmain.c:33:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.2][0m
+int main()
+        ^
+[1mmain.c:197:33: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-9.3][0m
+                Blood_Inventory b =
+                                ^
+[1mmain.c:557:21: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-9.3][0m
+    Blood_Inventory b =
+                    ^
+[1mmain.c:60:19: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-14.4][0m
+                if(Admin_Login())
+                  ^
+[1mmain.c:200:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+                if(b.Available_Units == -1)
+                ^
+[1mmain.c:202:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+                else
+                ^
+[1mmain.c:218:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+                if(r.Request_ID == -1)
+                ^
+[1mmain.c:220:17: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+                else
+                ^
+[1mmain.c:560:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    if(b.Available_Units == -1)
+    ^
+[1mmain.c:562:5: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-15.6][0m
+    else
+    ^
+[1mmain.c:70:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.3][0m
+        }
+        ^
+[1mmain.c:114:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.3][0m
+        }
+        ^
+[1mmain.c:156:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.3][0m
+        }
+        ^
+[1mmain.c:231:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.3][0m
+        }
+        ^
+[1mmain.c:305:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.3][0m
+        }
+        ^
+[1mmain.c:335:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.4][0m
+        switch(choice)
+        ^
+[1mmain.c:384:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.4][0m
+        switch(choice)
+        ^
+[1mmain.c:447:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.4][0m
+        switch(choice)
+        ^
+[1mmain.c:480:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.4][0m
+        switch(choice)
+        ^
+[1mmain.c:525:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.4][0m
+        switch(choice)
+        ^
+[1mmain.c:589:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.4][0m
+        switch(choice)
+        ^
+[1mmain.c:644:9: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-16.4][0m
+        switch(choice)
+        ^
+[1mmain.c:41:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n=========================================================\n");
+              ^
+[1mmain.c:42:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("              BLOOD BANK MANAGEMENT SYSTEM\n");
+              ^
+[1mmain.c:43:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:45:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("1. User Portal\n");
+              ^
+[1mmain.c:46:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("2. Admin Portal\n");
+              ^
+[1mmain.c:47:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("0. Exit\n");
+              ^
+[1mmain.c:49:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:50:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Enter Choice : ");
+              ^
+[1mmain.c:51:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d", &choice);
+             ^
+[1mmain.c:65:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("\nThank You For Using Blood Bank Management System\n");
+                      ^
+[1mmain.c:69:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Invalid Choice\n");
+                      ^
+[1mmain.c:87:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n=========================================================\n");
+              ^
+[1mmain.c:88:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("                    USER PORTAL\n");
+              ^
+[1mmain.c:89:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:91:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("1. Donate Blood\n");
+              ^
+[1mmain.c:92:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("2. Request Blood\n");
+              ^
+[1mmain.c:93:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("0. Back\n");
+              ^
+[1mmain.c:95:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:96:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Enter Choice : ");
+              ^
+[1mmain.c:97:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:113:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Invalid Choice\n");
+                      ^
+[1mmain.c:129:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n=========================================================\n");
+              ^
+[1mmain.c:130:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("                    DONATE BLOOD\n");
+              ^
+[1mmain.c:131:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:133:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("1. Register New Donor\n");
+              ^
+[1mmain.c:134:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("2. Record Donation\n");
+              ^
+[1mmain.c:135:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("0. Back\n");
+              ^
+[1mmain.c:137:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:138:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Enter Choice : ");
+              ^
+[1mmain.c:139:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:155:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Invalid Choice\n");
+                      ^
+[1mmain.c:171:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n=========================================================\n");
+              ^
+[1mmain.c:172:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("                    REQUEST BLOOD\n");
+              ^
+[1mmain.c:173:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:175:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("1. Register Blood Request\n");
+              ^
+[1mmain.c:176:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("2. Check Blood Availability\n");
+              ^
+[1mmain.c:177:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("3. View Request Status\n");
+              ^
+[1mmain.c:178:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("0. Back\n");
+              ^
+[1mmain.c:180:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:181:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Enter Choice : ");
+              ^
+[1mmain.c:182:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:194:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Blood Type : ");
+                      ^
+[1mmain.c:195:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%4s",Blood_Type);
+                     ^
+[1mmain.c:201:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Blood Type Not Found\n");
+                          ^
+[1mmain.c:212:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Request ID : ");
+                      ^
+[1mmain.c:213:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&Request_ID);
+                     ^
+[1mmain.c:219:27: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                    printf("Request Not Found\n");
+                          ^
+[1mmain.c:230:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Invalid Choice\n");
+                      ^
+[1mmain.c:246:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n=========================================================\n");
+              ^
+[1mmain.c:247:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("                    ADMIN PORTAL\n");
+              ^
+[1mmain.c:248:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:250:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("1. Donor Management\n");
+              ^
+[1mmain.c:251:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("2. Donation Management\n");
+              ^
+[1mmain.c:252:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("3. Inventory Management\n");
+              ^
+[1mmain.c:253:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("4. Request Management\n");
+              ^
+[1mmain.c:254:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("5. Distribution Management\n");
+              ^
+[1mmain.c:255:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("6. Blood Availability\n");
+              ^
+[1mmain.c:256:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("7. Reports\n");
+              ^
+[1mmain.c:257:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("8. User Management\n");
+              ^
+[1mmain.c:258:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("0. Logout\n");
+              ^
+[1mmain.c:260:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:261:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Enter Choice : ");
+              ^
+[1mmain.c:263:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:300:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Logged Out Successfully\n");
+                      ^
+[1mmain.c:304:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Invalid Choice\n");
+                      ^
+[1mmain.c:321:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n=========================================================\n");
+              ^
+[1mmain.c:322:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("                 DONOR MANAGEMENT\n");
+              ^
+[1mmain.c:323:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("=========================================================\n");
+              ^
+[1mmain.c:325:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("1. Add Donor\n");
+              ^
+[1mmain.c:326:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("2. View Donors\n");
+              ^
+[1mmain.c:327:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("3. Search Donor\n");
+              ^
+[1mmain.c:328:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("4. Update Donor\n");
+              ^
+[1mmain.c:329:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("5. Delete Donor\n");
+              ^
+[1mmain.c:330:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("0. Back\n");
+              ^
+[1mmain.c:332:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Enter Choice : ");
+              ^
+[1mmain.c:333:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:350:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Donor ID : ");
+                      ^
+[1mmain.c:351:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&ID);
+                     ^
+[1mmain.c:356:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Donor ID : ");
+                      ^
+[1mmain.c:357:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&ID);
+                     ^
+[1mmain.c:375:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n1. Record Donation");
+              ^
+[1mmain.c:376:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n2. View Donations");
+              ^
+[1mmain.c:377:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n3. Search Donations By Donor ID");
+              ^
+[1mmain.c:378:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n4. Search Donations By Date");
+              ^
+[1mmain.c:379:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n0. Back");
+              ^
+[1mmain.c:381:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n\nEnter Choice : ");
+              ^
+[1mmain.c:382:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:398:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Donor ID : ");
+                      ^
+[1mmain.c:399:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&Donor_ID);
+                     ^
+[1mmain.c:409:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Day   : ");
+                      ^
+[1mmain.c:410:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&date.day);
+                     ^
+[1mmain.c:412:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Month : ");
+                      ^
+[1mmain.c:413:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&date.month);
+                     ^
+[1mmain.c:415:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Year  : ");
+                      ^
+[1mmain.c:416:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&date.year);
+                     ^
+[1mmain.c:436:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n1. Add Stock");
+              ^
+[1mmain.c:437:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n2. Reserve Blood");
+              ^
+[1mmain.c:438:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n3. Issue Blood");
+              ^
+[1mmain.c:439:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n4. View Inventory");
+              ^
+[1mmain.c:440:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n5. Low Stock Report");
+              ^
+[1mmain.c:441:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n6. Out Of Stock Report");
+              ^
+[1mmain.c:442:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n0. Back");
+              ^
+[1mmain.c:444:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n\nEnter Choice : ");
+              ^
+[1mmain.c:445:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:471:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n1. View Requests");
+              ^
+[1mmain.c:472:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n2. Approve Request");
+              ^
+[1mmain.c:473:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n3. Reject Request");
+              ^
+[1mmain.c:474:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n4. View Pending Requests");
+              ^
+[1mmain.c:475:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n0. Back");
+              ^
+[1mmain.c:477:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n\nEnter Choice : ");
+              ^
+[1mmain.c:478:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:487:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Request ID : ");
+                      ^
+[1mmain.c:488:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&Request_ID);
+                     ^
+[1mmain.c:493:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Request ID : ");
+                      ^
+[1mmain.c:494:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&Request_ID);
+                     ^
+[1mmain.c:517:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n1. Issue Blood To Request");
+              ^
+[1mmain.c:518:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n2. View Distribution History");
+              ^
+[1mmain.c:519:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n3. View Transaction History");
+              ^
+[1mmain.c:520:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n0. Back");
+              ^
+[1mmain.c:522:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n\nEnter Choice : ");
+              ^
+[1mmain.c:523:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:528:23: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                printf("Enter Request ID : ");
+                      ^
+[1mmain.c:529:22: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+                scanf("%d",&Request_ID);
+                     ^
+[1mmain.c:554:11: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    printf("Enter Blood Type : ");
+          ^
+[1mmain.c:555:10: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+    scanf("%4s",Blood_Type);
+         ^
+[1mmain.c:561:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("Blood Type Not Found\n");
+              ^
+[1mmain.c:576:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n1. Donor Report");
+              ^
+[1mmain.c:577:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n2. Donation Report");
+              ^
+[1mmain.c:578:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n3. Inventory Report");
+              ^
+[1mmain.c:579:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n4. Request Report");
+              ^
+[1mmain.c:580:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n5. Distribution Report");
+              ^
+[1mmain.c:581:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n6. Low Stock Report");
+              ^
+[1mmain.c:582:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n7. Out Of Stock Report");
+              ^
+[1mmain.c:583:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n8. System Summary");
+              ^
+[1mmain.c:584:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n0. Back");
+              ^
+[1mmain.c:586:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n\nEnter Choice : ");
+              ^
+[1mmain.c:587:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:637:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n1. View Login Details");
+              ^
+[1mmain.c:638:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n2. Change Admin Password");
+              ^
+[1mmain.c:639:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n0. Back");
+              ^
+[1mmain.c:641:15: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        printf("\n\nEnter Choice : ");
+              ^
+[1mmain.c:642:14: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-17.7][0m
+        scanf("%d",&choice);
+             ^
+[1mmain.c:1:0: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-21.6][0m
+#include <stdio.h>
+^
+[1mBlood_Inventory_Management.h:31:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Update_Stock_After_Donation(
+     ^
+[1mDonor_Management.h:20:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Search_By_Name(const char *Name);
+     ^
+[1mDonor_Management.h:21:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Search_By_Blood_Type(const char *Blood_Type);
+     ^
+[1mDonor_Management.h:24:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Update_Donor_Details(int ID);
+     ^
+[1mDonor_Management.h:26:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Delete_Donor(int ID);
+     ^
+[1mDonation_Management.h:20:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Search_Donation_By_DonorID(int Donor_ID);
+     ^
+[1mDonation_Management.h:21:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Search_Donation_By_Date(Date date);
+     ^
+[1mBlood_Request_Management.h:30:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Approve_Request(int Request_ID);
+     ^
+[1mBlood_Request_Management.h:31:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Reject_Request(int Request_ID);
+     ^
+[1mBlood_Distribution_Management.h:22:6: [31mstyle:[39m misra violation (use --rule-texts=<file> to get proper output) [misra-c2012-8.7][0m
+void Issue_Blood_To_Request(int Request_ID);
+     ^

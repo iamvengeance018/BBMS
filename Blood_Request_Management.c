@@ -190,7 +190,7 @@ void Approve_Request(int Request_ID)
 
             strcpy(r.Status,"Approved");
 
-            fseek(F,-sizeof(Blood_Request),SEEK_CUR);
+            fseek(F,-(long)sizeof(Blood_Request),SEEK_CUR);
 
             fwrite(&r,sizeof(Blood_Request),1,F);
 
@@ -225,7 +225,7 @@ void Reject_Request(int Request_ID)
         {
             strcpy(r.Status,"Rejected");
 
-            fseek(F,-sizeof(Blood_Request),SEEK_CUR);
+            fseek(F,-(long)sizeof(Blood_Request),SEEK_CUR);
 
             fwrite(&r,sizeof(Blood_Request),1,F);
 

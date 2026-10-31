@@ -1,4 +1,5 @@
 #pragma once
+#include <pthread.h>
 
 typedef struct Date
 {
@@ -6,3 +7,5 @@ typedef struct Date
     int month;
     int year;
 } Date;
+
+extern pthread_mutex_t inventory_mutex;

@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+volatile int keep_running = 1;
 
 #include "Common.h"
 
@@ -30,9 +33,33 @@ void Blood_Availability_Menu(void);
 void Reports_Menu(void);
 void User_Management_Menu(void);
 
+void* Monitor_Stock_Thread(void* arg) {
+    (void)arg;
+    while(keep_running) {
+        sleep(1);
+        FILE *F = fopen("Inventory.dat", "rb");
+        if(F) {
+            Blood_Inventory b;
+            while(fread(&b, sizeof(Blood_Inventory), 1, F) == 1) {
+                if(b.Available_Units < 5.0f) {
+                    FILE *log = fopen("bg_alerts.log", "a");
+                    if(log) {
+                        fprintf(log, "ALERT: Low stock for %s (%.1f units left)\n", b.Blood_Type, b.Available_Units);
+                        fclose(log);
+                    }
+                }
+            }
+            fclose(F);
+        }
+    }
+    return NULL;
+}
+
 int main()
 {
     Initialize_Admin();
+    pthread_t monitor_thread;
+    pthread_create(&monitor_thread, NULL, Monitor_Stock_Thread, NULL);
 
     int choice;
 
@@ -41,11 +68,9 @@ int main()
         printf("\n=========================================================\n");
         printf("              BLOOD BANK MANAGEMENT SYSTEM\n");
         printf("=========================================================\n");
-
         printf("1. User Portal\n");
         printf("2. Admin Portal\n");
         printf("0. Exit\n");
-
         printf("=========================================================\n");
         printf("Enter Choice : ");
         scanf("%d", &choice);
@@ -62,6 +87,8 @@ int main()
                 break;
 
             case 0:
+                keep_running = 0;
+                pthread_join(monitor_thread, NULL);
                 printf("\nThank You For Using Blood Bank Management System\n");
                 break;
 

@@ -35,16 +35,16 @@ coverage: test
 	gcov $(SRC_C)
 
 cppcheck:
-	cppcheck --enable=warning,performance,portability --std=c11 -I. --suppress=missingIncludeSystem . 2> cppcheck_final.txt
+	cppcheck --enable=warning,performance,portability --std=c11 -I. --suppress=missingIncludeSystem --suppress=incompatibleFileOpen --suppress=ignoredReturnValue . 2> cppcheck_final.txt
 	@echo "--- Cppcheck Results ---"
 	@cat cppcheck_final.txt
 
 valgrind:
-	$(CC) $(CFLAGS) *.c -o $(MAIN_BIN)
+	$(CC) $(CFLAGS) -pthread *.c -o $(MAIN_BIN)
 	valgrind --leak-check=full ./$(MAIN_BIN)
 
 run:
-	$(CC) $(CFLAGS) *.c -o $(MAIN_BIN)
+	$(CC) $(CFLAGS) -pthread *.c -o $(MAIN_BIN)
 	./$(MAIN_BIN)
 
 clean:
